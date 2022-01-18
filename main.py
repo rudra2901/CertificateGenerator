@@ -2,17 +2,17 @@ import pandas
 from PIL import Image, ImageFont, ImageDraw
 
 # Global Variables
-FONT_FILE = ImageFont.truetype(r'font/Montserrat-Bold.ttf', 31)
+FONT_FILE = ImageFont.truetype(r'font/Montserrat-Bold.ttf', 28)
 FONT_COLOR = "#000000"
 
-template = Image.open(r'template.png')
+template = Image.open(r'CertificateTemplate.png')
 WIDTH, HEIGHT = template.size
 
 
 def make_certificates(name):
     '''Function to save certificates as a .png file'''
 
-    image_source = Image.open(r'template.png')
+    image_source = Image.open(r'CertificateTemplate.png')
     draw = ImageDraw.Draw(image_source)
 
     # Finding the width and height of the text.
